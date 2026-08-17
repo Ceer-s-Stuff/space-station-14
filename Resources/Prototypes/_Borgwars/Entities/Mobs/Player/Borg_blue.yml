@@ -1,7 +1,7 @@
 - type: entity
-  id: BorgWarChassisGenericRed # Placeholder borg until I make actual classes.
+  id: BorgWarChassisGenericBlue # Placeholder borg until I make actual classes.
   parent: BorgChassisSyndicateAssault
-  suffix: Borgwars, Red, Generic, PLACEHOLDER
+  suffix: Borgwars, Blue, Generic, PLACEHOLDER
   components:
   - type: ContainerFill
     containers:
