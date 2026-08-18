@@ -49,13 +49,13 @@
   components:
   - type: Sprite
     # Once it's in a core it's pretty much an abstract entity at that point.
-    visible: true
+    visible: false
   - type: SiliconLawProvider
     laws: RedTeamCommanderLawset
   - type: GhostTakeoverAvailable
   - type: Tag
     tags:
-    #- HideContextMenu
+    #- HideContextMenu # Borg Wars - Keeping this commented for "debug purposes" or whatever.
     - BorgRedCommander
     - NoConsoleSound
     - StationAi
