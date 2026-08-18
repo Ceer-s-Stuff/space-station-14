@@ -1,0 +1,70 @@
+- type: entity
+  id: BorgWarChassisGenericRed
+  parent: BorgChassisSyndicateAssault
+  suffix: Borgwars, Red, Generic, WHAT!!!!!!!
+  components:
+  - type: ContainerFill
+    containers:
+      borg_brain:
+      - PositronicBrain
+      borg_module:
+      - BorgModuleOperative
+      - BorgModuleL6C
+      - BorgModuleDoubleEsword
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellAntiqueProto
+  - type: SiliconLawProvider
+    laws: RedTeamGenericLawset
+
+
+# The Body of the Red Commander
+- type: entity
+  id: BorgWarCommanderRedEmpty
+  name: Red Commander
+  parent: PlayerStationAiEmpty
+  suffix: Borgwars, Red, Commander, do not map
+
+
+
+# Red commander job spawn
+- type: entity
+  id: BorgWarCommanderRed
+  parent: BorgWarCommanderRedEmpty
+  suffix: Job spawn
+  components:
+  - type: ContainerSpawnPoint
+    containerId: station_ai_mind_slot
+    job: BorgRedCommander
+
+
+
+# The Actual brain inside the Core
+
+- type: entity
+  id: BorgWarCommanderRedBrain
+  parent: StationAiBrain
+  components:
+  - type: Sprite
+    # Once it's in a core it's pretty much an abstract entity at that point.
+    visible: true
+  - type: SiliconLawProvider
+    laws: RedTeamCommanderLawset
+  - type: GhostTakeoverAvailable
+  - type: Tag
+    tags:
+    #- HideContextMenu
+    - BorgRedCommander
+    - NoConsoleSound
+    - StationAi
+  - type: NameIdentifier
+    group: BorgRedCommander
+  - type: ToggleableGhostRole
+    roleName: station-ai-ghost-role-name
+    roleDescription: station-ai-ghost-role-description
+    roleRules: ghost-role-information-silicon-rules
+    mindRoles:
+    - MindRoleGhostRoleSilicon
+    job: BorgRedCommander

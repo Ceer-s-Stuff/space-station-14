@@ -1,0 +1,10 @@
+- type: job
+  id: BorgRedCommander
+  name: job-name-borg-red-commander
+  description: job-name-borg-red-commander-desc
+  playTimeTracker: JobBorgRedCommander
+  icon: JobIconStationAi
+  supervisors: job-supervisors-redcommander
+  jobEntity: BorgWarCommanderRedBrain
+  applyTraits: false
+  jobPreviewEntity: PlayerStationAiPreview

@@ -1,0 +1,1 @@
+borg-red-name = Generic Red Borg
