@@ -29,11 +29,8 @@
         - type: StationJobs
           availableJobs:
             Captain: [ -1, -1 ]
-<<<<<<< Updated upstream
-=======
             BorgRedGeneric: [ -1, -1 ]
-            BorgRedCommander: [ 1, 1 ]
->>>>>>> Stashed changes
+            BorgRedCommander: [ -1, -1 ]
 
 - type: gameMap
   id: TestTeg
