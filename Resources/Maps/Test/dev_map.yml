@@ -4,7 +4,7 @@ meta:
   engineVersion: 288.1.0
   forkId: ""
   forkVersion: ""
-  time: 08/17/2026 07:47:37
+  time: 08/18/2026 14:35:04
   entityCount: 3552
 maps:
 - 1
@@ -3162,7 +3162,7 @@ entities:
     - type: Transform
       parent: 2
       pos: 49.5,25.5
-- proto: BorgWarCommanderRedEmpty
+- proto: BorgWarCommanderRed
   entities:
   - uid: 397
     components:
