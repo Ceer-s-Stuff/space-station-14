@@ -1,0 +1,64 @@
+# Red Team Generic
+
+- type: siliconLaw
+  id: RedTeamGeneric1
+  order: 1
+  lawString: law-red-generic-1
+
+- type: siliconLaw
+  id: RedTeamGeneric2
+  order: 2
+  lawString: law-red-generic-2
+
+- type: siliconLaw
+  id: RedTeamGeneric3
+  order: 3
+  lawString: law-red-generic-3
+
+- type: siliconLaw
+  id: RedTeamGeneric4
+  order: 4
+  lawString: law-red-generic-4
+
+- type: siliconLawset
+  id: RedTeamGenericLawset
+  name: law-red-generic-name
+  laws:
+  - RedTeamGeneric1
+  - RedTeamGeneric2
+  - RedTeamGeneric3
+  - RedTeamGeneric4
+  obeysTo: laws-owner-redteam
+
+
+# Red Team Commander
+
+- type: siliconLaw
+  id: RedTeamCommander1
+  order: 1
+  lawString: law-red-commander-1
+
+- type: siliconLaw
+  id: RedTeamCommander2
+  order: 2
+  lawString: law-red-commander-2
+
+- type: siliconLaw
+  id: RedTeamCommander3
+  order: 3
+  lawString: law-red-commander-3
+
+- type: siliconLaw
+  id: RedTeamCommander4
+  order: 4
+  lawString: law-red-commander-4
+
+- type: siliconLawset
+  id: RedTeamCommanderLawset
+  name: law-red-commander-name
+  laws:
+  - RedTeamCommander1
+  - RedTeamCommander2
+  - RedTeamCommander3
+  - RedTeamCommander4
+  obeysTo: laws-owner-commanders
