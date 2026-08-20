@@ -55,7 +55,7 @@
 
 - type: siliconLawset
   id: RedTeamCommanderLawset
-  name: law-red-Commander-name
+  name: law-red-commander-name
   laws:
   - RedTeamCommander1
   - RedTeamCommander2
