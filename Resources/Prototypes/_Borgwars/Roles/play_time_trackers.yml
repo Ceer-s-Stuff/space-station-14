@@ -1,8 +1,8 @@
-- type: playTimeTracker # Used as a tracker for red team borgs
+- type: playTimeTracker # Used as a general tracker for red team borgs
   id: JobBorgRed
 
+- type: playTimeTracker # Used as a general tracker for blue team borgs
+  id: JobBorgBlue
 
 - type: playTimeTracker # Used as a tracker for red team commanders
   id: JobBorgRedCommander
-
-

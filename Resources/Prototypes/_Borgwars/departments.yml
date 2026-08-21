@@ -2,7 +2,15 @@
   id: BorgWarsRedDepartment
   name: department-borgwars-redteam
   description: department-borgwars-redteam-description
-  color: "#A46106"
+  color: "#f74848"
+  roles:
+  - BorgRedGeneric
+
+- type: department
+  id: BorgWarsBlueDepartment
+  name: department-borgwars-blueteam
+  description: department-borgwars-blueteam-description
+  color: "#488bf7"
   roles:
   - BorgRedGeneric
   - BorgRedCommander
